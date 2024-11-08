@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class HW2 {
     public static void main(String[] args) {
         System.out.println(permission(19, 15));
@@ -16,5 +18,8 @@ public class HW2 {
             return ("Можно идти гулять");
         }else return ("Оставайтесь дома");
     }
-
+    public static int generateRandomAge() {
+        Random random = new Random();
+        return random.nextInt(100);
+    }
 }
